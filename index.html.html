@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zoológico de Guarulhos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:Poppins, sans-serif;background:#eef7ee;color:#333}
+
+    header{background:linear-gradient(135deg,#2e7d32,#66bb6a);color:#fff;text-align:center;padding:25px}
+    header h1{font-size:1.8em}
+
+    nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;background:#1b5e20;padding:10px}
+    nav button{background:none;border:none;color:#fff;font-weight:600;padding:8px 12px;border-radius:8px}
+    nav button:hover{background:#388e3c}
+
+    section{display:none;padding:20px 12px;max-width:1100px;margin:auto}
+    section.active{display:block}
+
+    h2{color:#2e7d32;margin-bottom:10px}
+
+    .card{background:#fff;padding:18px;border-radius:15px;margin-bottom:20px;box-shadow:0 3px 8px rgba(0,0,0,0.1)}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:15px}
+
+    .animal{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 3px 8px rgba(0,0,0,0.1)}
+    .animal img{width:100%;height:130px;object-fit:cover}
+    .animal h3{text-align:center;font-size:0.95em;padding:6px}
+    .animal p{font-size:0.8em;padding:0 8px 10px;text-align:center}
+
+    iframe{width:100%;height:250px;border:none;border-radius:10px;margin-top:10px}
+
+    footer{background:#2e7d32;color:#fff;text-align:center;padding:12px;font-size:0.85em}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Zoológico de Guarulhos</h1>
+  <p>Preservação • Educação • Lazer</p>
+</header>
+
+<div style="width:100%;height:180px;background:url('https://source.unsplash.com/1200x400/?zoo,nature') center/cover no-repeat;"></div>
+
+<nav>
+  <button onclick="showPage('home')">Início</button>
+  <button onclick="showPage('sobre')">Sobre</button>
+  <button onclick="showPage('animais')">Animais</button>
+  <button onclick="showPage('contato')">Contato</button>
+</nav>
+
+<section id="home" class="active">
+  <div class="card">
+    <h2>Bem-vindo</h2>
+    <p>Conheça o Zoológico de Guarulhos e aprenda sobre os animais e a importância da preservação ambiental.</p>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="card">
+    <h2>Sobre o Zoológico</h2>
+    <p>O Zoológico de Guarulhos abriga cerca de 500 animais de aproximadamente 100 espécies, com foco na fauna brasileira, promovendo educação ambiental e preservação.</p>
+
+    <p><b>Endereço:</b> Rua Dona Glória Pagnoncelli, 344, Jardim Rosa de França, Guarulhos - SP, CEP 07081-120</p>
+    <p><b>Funcionamento:</b> Terça a domingo, das 9h às 16h30</p>
+    <p><b>Entrada:</b> Gratuita (com estacionamento gratuito)</p>
+
+    <p><b>Destaques:</b> Aproximadamente 500 animais de 100 espécies, com foco na fauna brasileira.</p>
+
+    <p><b>Estrutura:</b> Áreas para piquenique, parquinho para crianças, trilhas e espaços educativos.</p>
+
+    <h3>Localização:</h3>
+    <iframe src="https://www.google.com/maps?q=Rua+Dona+Glória+Pagnoncelli,+344,+Guarulhos&output=embed"></iframe>
+  </div>
+</section>
+
+<section id="animais">
+
+  <div class="card">
+    <h2>🦜 Aves</h2>
+    <div class="grid">
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?macaw"><h3>Arara</h3><p>Ara macao • Ave inteligente e colorida.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?toucan"><h3>Tucano</h3><p>Ramphastos • Dispersa sementes.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?parrot"><h3>Papagaio</h3><p>Psittacidae • Imita sons.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?owl"><h3>Coruja</h3><p>Ave noturna.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?hawk"><h3>Gavião</h3><p>Predador ágil.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?eagle"><h3>Águia</h3><p>Visão excelente.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?flamingo"><h3>Flamingo</h3><p>Ave aquática.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?peacock"><h3>Pavão</h3><p>Cauda colorida.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?heron"><h3>Garça</h3><p>Áreas alagadas.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?duck"><h3>Pato</h3><p>Aquático.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?canary"><h3>Canário</h3><p>Canto forte.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?vulture"><h3>Urubu</h3><p>Importante para limpeza ambiental.</p></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🐍 Répteis</h2>
+    <div class="grid">
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?crocodile"><h3>Jacaré</h3><p>Vive em rios.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?iguana"><h3>Iguana</h3><p>Herbívoro.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?snake"><h3>Cobra</h3><p>Diversas espécies.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?turtle"><h3>Tartaruga</h3><p>Alta longevidade.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?lizard"><h3>Lagarto</h3><p>Ágil.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?gecko"><h3>Gecko</h3><p>Escalador.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?chameleon"><h3>Camaleão</h3><p>Muda de cor.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?alligator"><h3>Aligátor</h3><p>Similar ao jacaré.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?komodo"><h3>Komodo</h3><p>Maior lagarto.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?boa"><h3>Jiboia</h3><p>Constritora.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?python"><h3>Píton</h3><p>Grande serpente.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?tortoise"><h3>Jabuti</h3><p>Terrestre.</p></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🐾 Mamíferos</h2>
+    <div class="grid">
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?capybara"><h3>Capivara</h3><p>Maior roedor.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?jaguar"><h3>Onça</h3><p>Predador.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?monkey"><h3>Macaco</h3><p>Inteligente.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?sloth"><h3>Preguiça</h3><p>Lenta.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?fox"><h3>Raposa</h3><p>Adaptável.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?wolf"><h3>Lobo</h3><p>Vive em grupo.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?deer"><h3>Veado</h3><p>Herbívoro.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?tapir"><h3>Anta</h3><p>Dispersora.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?coati"><h3>Quati</h3><p>Sociável.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?otter"><h3>Lontra</h3><p>Aquática.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?bat"><h3>Morcego</h3><p>Importante polinizador.</p></div>
+      <div class="animal"><img src="https://source.unsplash.com/400x300/?armadillo"><h3>Tatu</h3><p>Escavador.</p></div>
+    </div>
+  </div>
+
+</section>
+
+<section id="contato">
+  <div class="card">
+    <h2>Contato</h2>
+    <p><b>Email:</b> gerencia.zooguarulhos@gmail.com</p>
+    <p><b>Email:</b> eambiental.zooguarulhos@gmail.com</p>
+    <p><b>Telefone:</b> (11) 2455-4999 / (11) 2455-6497</p>
+  </div>
+</section>
+
+<footer>
+  <p>Projeto Escolar - Zoológico de Guarulhos</p>
+</footer>
+
+<script>
+function showPage(id){
+  document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0,0);
+}
+</script>
+
+</body>
+</html>
