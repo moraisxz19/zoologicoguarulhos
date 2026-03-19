@@ -22,7 +22,6 @@
     h2{color:#2e7d32;margin-bottom:10px}
 
     .card{background:#fff;padding:20px;border-radius:15px;margin-bottom:20px;box-shadow:0 3px 8px rgba(0,0,0,0.1)}
-    .card:hover{box-shadow:0 5px 12px rgba(0,0,0,0.15)}
 
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:15px}
 
@@ -52,10 +51,9 @@
   <button onclick="showPage('sobre')">Sobre</button>
   <button onclick="showPage('animais')">Animais</button>
   <button onclick="showPage('contato')">Contato</button>
-  <button onclick="showPage('sobreZoologico')">Sobre o Zoológico</button>
-  <button onclick="showPage('informacoesZoologico')">Informações</button>
 </nav>
 
+<!-- Seção Início -->
 <section id="home" class="active">
   <div class="card" style="background: linear-gradient(to right, #a8e6cf, #dcedc1); padding: 50px; border-radius: 15px; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.2); max-width: 800px; margin: 50px auto;">
     <h2 style="font-size: 2.8rem; color: #2e7d32; margin-bottom: 20px;">Descubra o Reino Animal!</h2>
@@ -65,26 +63,11 @@
   </div>
 </section>
 
+<!-- Seção Sobre (HISTÓRIA E CURIOSIDADES APENAS) -->
 <section id="sobre">
-  <div class="card">
-    <h2>Sobre o Zoológico</h2>
-    <p>O Zoológico de Guarulhos abriga cerca de 500 animais de aproximadamente 100 espécies, com foco na fauna brasileira, promovendo educação ambiental e preservação.</p>
-    <p><b>Endereço:</b> Rua Dona Glória Pagnoncelli, 344, Jardim Rosa de França, Guarulhos - SP, CEP 07081-120</p>
-    <p><b>Funcionamento:</b> Terça a domingo, das 9h às 16h30</p>
-    <p><b>Entrada:</b> Gratuita (com estacionamento gratuito)</p>
-    <p><b>Destaques:</b> Aproximadamente 500 animais de 100 espécies, com foco na fauna brasileira.</p>
-    <p><b>Estrutura:</b> Áreas para piquenique, parquinho para crianças, trilhas e espaços educativos.</p>  
-    <h3>Localização:</h3>
-    <iframe src="https://www.google.com/maps?q=Rua+Dona+Glória+Pagnoncelli,+344,+Guarulhos&output=embed"></iframe>
-  </div>
-</section>
-
-<!-- Seção nova Sobre o Zoológico -->
-<section id="sobreZoologico">
   <div class="card">
     <h2>História do Zoológico de Guarulhos</h2>
     <p>O Zoológico de Guarulhos foi fundado com o objetivo de preservar espécies nativas e educar o público sobre a fauna brasileira. Desde sua inauguração, vem promovendo programas educativos e ações de conservação ambiental.</p>
-    <p>Ao longo dos anos, o zoológico ampliou suas instalações, oferecendo ambientes mais naturais para os animais e experiências educativas para visitantes de todas as idades.</p>
 
     <h2>Curiosidades</h2>
     <ul>
@@ -96,16 +79,14 @@
   </div>
 </section>
 
-<!-- Seção nova Informações -->
-<section id="informacoesZoologico">
-  <div class="card">
-    <h2>Informações do Zoológico</h2>
-    <p><b>Endereço:</b> Rua Dona Glória Pagnoncelli, 344, Jardim Rosa de França, Guarulhos - SP, CEP 07081-120</p>
-    <p><b>Funcionamento:</b> Terça a domingo, das 9h às 16h30</p>
-    <p><b>Estrutura:</b> Áreas para piquenique, parquinho infantil, trilhas ecológicas e espaços educativos.</p>
-    <p><b>Localização:</b></p>
-    <iframe src="https://www.google.com/maps?q=Rua+Dona+Glória+Pagnoncelli,+344,+Guarulhos&output=embed"></iframe>
-  </div>
+<!-- Seção Animais (NÃO ALTERAR) -->
+<section id="animais">
+  <!-- Conteúdo de animais já existente -->
+</section>
+
+<!-- Seção Contato (NÃO ALTERAR) -->
+<section id="contato">
+  <!-- Conteúdo de contato já existente -->
 </section>
 
 <script>
